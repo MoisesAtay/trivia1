@@ -1,3 +1,4 @@
+
 import random
 import time
 
@@ -16,6 +17,9 @@ iniciarTrivia = True
 print('CULTURA GENERAL')
 print("Bienvenido a mi trivia sobre cultura general")
 print("Pondremos a prueba tus conocimientos")
+
+# la funcion time.sleep es para que espere 5 segundos para que pase al siguiente código
+time.sleep(5)
 
 nombre = input("Ingresa tu nombre: ")
 
