@@ -17,9 +17,8 @@ iniciarTrivia = True
 intentos = 0
 
 print('CULTURA GENERAL')
-print("Bienvenido a mi trivia sobre cultura general")
-print("Pondremos a prueba tus conocimientos")
-
+print("Bienvenido a mi TRIVIA sobre Cultura General")
+print("Pondremos a prueba tus conocimientos \U0001F600")
 # la funcion time.sleep es para que espere 5 segundos antes que pase al siguiente código
 time.sleep(5)
 
@@ -33,7 +32,7 @@ print(
 time.sleep(1)
 print(
     YELLOW,
-    "si presionas x, tendrás un mensaje oculto, puede que sea la respuesta pero tendras un puntaje mínimo"
+    "Si presionas 'x', tendrás un mensaje oculto, puede que sea la respuesta pero tendrás un puntaje mínimo"
 )
 
 #mientras la variable iniciarTrivia es True va a seguir el juego
@@ -53,7 +52,7 @@ while iniciarTrivia == True:
         time.sleep(1)
 
     #pregunta 1**********************************
-    print(BLUE, '\n1) ¿Cuál es el lugar mas frio de la tierra? ', CYAN)
+    print(BLUE, '\n1) ¿Cuál es el lugar mas frio de la Tierra? ', CYAN)
     print('\t a) la Antártida')
     print('\t b) el Polo Norte')
     print('\t c) Asia')
@@ -88,7 +87,7 @@ while iniciarTrivia == True:
 
     #pregunta 2*****************************
     time.sleep(3)
-    print(BLUE, '\n2) ¿Quien escribió la Odisea? ', CYAN)
+    print(BLUE, '\n2) ¿Quién escribió la Odisea? ', CYAN)
     print('\t a) Shakespeare')
     print('\t b) Mario Vargas Llosa')
     print('\t c) Homero')
@@ -114,7 +113,7 @@ while iniciarTrivia == True:
 
     #pregunta 3***************************
     time.sleep(3)
-    print(BLUE, '\n3) ¿Cuál es el rio mas grande del mundo? ', CYAN)
+    print(BLUE, '\n3) ¿Cuál es el río más grande del mundo? ', CYAN)
     print('\t a) Marte')
     print('\t b) Nilo')
     print('\t c) Rimac')
@@ -155,7 +154,7 @@ while iniciarTrivia == True:
 
     #pregunta 4 ***********************
     time.sleep(3)
-    print(BLUE, '\n4) ¿Donde se ecuentra la torre Eiffel? ', CYAN)
+    print(BLUE, '\n4) ¿En qué país se ecuentra la Torre Eiffel? ', CYAN)
     print('\t a) Paris')
     print('\t b) Francia')
     print('\t c) Italia')
@@ -199,8 +198,8 @@ while iniciarTrivia == True:
     print("\n\nQuiere continuar jugando?: ")
     #si ingresa "si" el juego se repitirá
     repetirJuego = input(
-        "Ingresa \"si\" para repetir o cualquier tecla para finalizar: "
+        "Ingresa \"si\" para repetir la Trivia o cualquier tecla para finalizar: "
     ).lower()
     if repetirJuego != "si":
         iniciarTrivia = False
-        print(f"\nEspero {nombre} hayas pasado muy bien. Hasta pronto!!")
+        print(f"\nEspero {nombre} hayas pasado muy bien. Hasta pronto!!\U0001F600\U0001F600")
