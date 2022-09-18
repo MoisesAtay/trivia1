@@ -41,7 +41,7 @@ while iniciarTrivia == True:
     #se crea un puntaje aleatorio de 0 a 10 puntos
     puntaje = random.randint(0, 10)
     #el numero de intentos avanza en 1
-    intentos+=1
+    intentos += 1
     time.sleep(1)
     print(RED, "Tienes ", puntaje, " puntos, cortesía de Trivia:)", RESET)
     time.sleep(1)
@@ -180,13 +180,20 @@ while iniciarTrivia == True:
     time.sleep(1)
     print(RED, "puntaje: ", puntaje, RESET)
 
-    aleat = random.randint(3, 8)
-    for puntFin in range(aleat, 0, -1):
+    #obtener un puntaje extra tirando la ruleta
+    input(
+        "Tire la ruleta presionando \"enter\" para obtener un puntaje extra ")
+    ruleta = random.randint(5, 10)
+    puntaje += ruleta
+
+    print("Obtuviste ", ruleta, " puntos más")
+
+    #se muestra el puntaje final
+    for puntFin in range(3, 0, -1):
         print("...", puntFin)
         time.sleep(0.5)
-    print(MAGENTA,"Numero de intentos: ",intentos)
+    print(MAGENTA, "Numero de intentos: ", intentos)
     print(MAGENTA, "TU PUNTAJE FINAL ES: ", puntaje, RESET)
-  
 
     time.sleep(2)
     print("\n\nQuiere continuar jugando?: ")
@@ -197,4 +204,3 @@ while iniciarTrivia == True:
     if repetirJuego != "si":
         iniciarTrivia = False
         print(f"\nEspero {nombre} hayas pasado muy bien. Hasta pronto!!")
-
